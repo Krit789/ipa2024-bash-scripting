@@ -11,6 +11,6 @@ for id in $SERVER_ID_LIST; do
     result=$(speedtest-cli --csv --server $id)
     end_time=$(date +%s)
     elapsed=$((end_time - start_time))
-    echo "Test completed in $elapsed seconds"
+    echo "Test completed in $elapsed seconds."
     echo "Done"
 done
